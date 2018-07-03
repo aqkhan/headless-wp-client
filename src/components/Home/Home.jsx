@@ -24,7 +24,7 @@ class Home extends Component {
                     <section id="one" className="tiles">
                         {
                             categories.map(single => (
-                                <article key={single.term_id} style={{ backgroundImage: `url(${single.thumbnail ? single.thumbnail : "images/pic01.jpg"})` }}
+                                <article key={single.term_id} style={{ backgroundImage: `url(${single.thumbnail ? single.thumbnail : require("../../images/pic01.jpg")})` }}
                                          onClick={ () => redirectTo(`/category/${single.term_id}`)} >
 									<span className="image">
 										<img src={require("../../images/pic01.jpg")} alt="" />

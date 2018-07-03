@@ -14,7 +14,7 @@ class SingleCategory extends Component {
                 <section id="banner" className="style2" style={{ backgroundImage: `url(${category.thumbnail !== '' ? category.thumbnail : "images/pic07.jpg"})` }}>
                     <div className="inner">
 							<span className="image">
-								<img src="images/pic07.jpg" alt="" />
+								<img src={require("../../images/pic07.jpg")} alt="" />
 							</span>
                         <header className="major">
                             <h1>{ category.name }</h1>
